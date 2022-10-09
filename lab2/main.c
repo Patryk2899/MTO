@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-
+#include <stdlib.h>
 void display(int size, char* param) {
 	for (int j=0;j<size;j++){
 		if (param[j] >= 65 && param[j] <= 90){
@@ -14,11 +14,37 @@ void display(int size, char* param) {
 }
 
 int my_printf(char *format_string, char *param){
+	int size = 0;
+	int k = 0;
+	int index = 0;
+	char length[4];
 	for(int i=0;i<strlen(format_string);i++){
-		if((format_string[i] == '#') && (format_string[i+1] == 'k')){
-			i++;
+		if((format_string[i] == '#') && (format_string[i+1] == '.')){
+			if (format_string[i+2] >= 48 && format_string[i+2] <= 57){
+				k = i+2;
+				while (format_string[k] >= 48 && format_string[k] <= 57){
+					length[index] = format_string[k];
+					k++;
+				}
+				if (format_string[k] == 'k'){
+					size = atoi(length);
+					if (size > strlen(param)){
+						size = strlen(param);
+					}
+					display(size, param);
+					i+=index+2;
+				}else {
+					putchar(format_string[i]);
+					continue;
+				}
+			}else{
+				continue;
+			}
+		}else if ((format_string[i] == '#') && (format_string[i+1] == 'k')){
 			display(strlen(param), param);
-		}else
+			i++;
+		}
+		else
 			putchar(format_string[i]);
 	}
 	puts("");
