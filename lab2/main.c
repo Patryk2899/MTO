@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+
 void display(int size, char* param) {
 	for (int j=0;j<size;j++){
 		if (param[j] >= 65 && param[j] <= 90){
@@ -25,6 +26,7 @@ int my_printf(char *format_string, char *param){
 				while (format_string[k] >= 48 && format_string[k] <= 57){
 					length[index] = format_string[k];
 					k++;
+					index++;
 				}
 				if (format_string[k] == 'k'){
 					size = atoi(length);
@@ -38,6 +40,7 @@ int my_printf(char *format_string, char *param){
 					continue;
 				}
 			}else{
+				putchar(format_string[i]);
 				continue;
 			}
 		}else if ((format_string[i] == '#') && (format_string[i+1] == 'k')){
