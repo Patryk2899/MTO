@@ -22,6 +22,7 @@ int my_printf(char *format_string, char *param){
 			putchar(format_string[i]);
 	}
 	puts("");
+	return 0;
 }
 
 int main(int argc, char *argv[]){
