@@ -21,9 +21,8 @@ void display_according_to_size(int size, char* param){
 		for (int i = 0; i < result ; i++){
 			printf(" ");
 		}
-	}else {
-		display(strlen(param), param);
 	}
+	display(strlen(param), param);
 }
 
 int my_printf(char *format_string, char *param){
