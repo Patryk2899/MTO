@@ -54,7 +54,22 @@ int my_printf(char *format_string, char *param){
 				putchar(format_string[i]);
 				continue;
 			}
-		}else if ((format_string[i] == '#') && (format_string[i+1] == 'k')){
+		}else if(format_string[i] == '#' && (format_string[i+1] >= 48 && format_string[i+1] <= 57)){
+			k = i+1;
+				while (format_string[k] >= 48 && format_string[k] <= 57){
+					length[index] = format_string[k];
+					k++;
+					index++;
+				}
+				if (format_string[k] == 'k'){
+					size = atoi(length);
+					display_according_to_size(size, param);
+				}else{
+					putchar(format_string[i]);
+					continue;
+				}
+		}
+		else if ((format_string[i] == '#') && (format_string[i+1] == 'k')){
 			display(strlen(param), param);
 			i++;
 		}
