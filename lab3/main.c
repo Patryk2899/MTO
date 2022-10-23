@@ -19,7 +19,7 @@ void display_according_to_size(int size, char* param){
 	if(size > strlen(param)){
 		result = size - strlen(param);
 		for (int i = 0; i < result ; i++){
-			putchar(" ");
+			printf(" ");
 		}
 	}else {
 		display(strlen(param), param);
