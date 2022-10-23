@@ -64,6 +64,7 @@ int my_printf(char *format_string, char *param){
 				if (format_string[k] == 'k'){
 					size = atoi(length);
 					display_according_to_size(size, param);
+					i+=index+1;
 				}else{
 					putchar(format_string[i]);
 					continue;
