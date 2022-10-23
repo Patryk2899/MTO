@@ -14,6 +14,18 @@ void display(int size, char* param) {
 	}
 }
 
+void display_according_to_size(int size, char* param){
+	int result;
+	if(size > strlen(param)){
+		result = size - strlen(param);
+		for (int i = 0; i < result ; i++){
+			putchar(" ");
+		}
+	}else {
+		display(strlen(param), param);
+	}
+}
+
 int my_printf(char *format_string, char *param){
 	int size = 0;
 	int k = 0;
