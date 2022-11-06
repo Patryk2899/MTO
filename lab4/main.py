@@ -14,11 +14,14 @@ def reverse_number(n):
 def my_printf(format_string,param):
     #print(format_string)
     shouldDo=True
+    shouldRevert=True
     for idx in range(0,len(format_string)):
         if shouldDo:
             if format_string[idx] == '#' and format_string[idx+1] == 'g':
                 param = int(param)
-                param = reverse_number(param)
+                if shouldRevert:
+                    param = reverse_number(param)
+                    shouldRevert=False
                 print(param,end="")
                 shouldDo=False
             else:
