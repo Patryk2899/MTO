@@ -8,6 +8,11 @@ def my_printf(format_string,param):
     for idx in range(0,len(format_string)):
         if shouldDo:
             if format_string[idx] == '#' and format_string[idx+1] == 'g':
+                for i in range(0, len(param)):
+                    if param[i] != 0:
+                        break
+                    else:
+                        param = param[1:]
                 print(param[::-1],end="")
                 shouldDo=False
             else:
