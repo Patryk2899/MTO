@@ -3,12 +3,13 @@
 import sys
 
 def reverse_number(n):
-    r = 0
-    while n > 0:
-        r *= 10
-        r += n % 10
-        n /= 10
-    return r
+    rev = 0
+    
+    while(n > 0):
+        a = n % 10
+        rev = rev * 10 + a
+        n = n // 10
+    return rev
 
 def my_printf(format_string,param):
     #print(format_string)
