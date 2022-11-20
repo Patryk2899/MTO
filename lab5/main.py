@@ -22,6 +22,7 @@ def my_printf(format_string,param):
                     n = len(param) - x
                     print('9'*n, end="")
                     print(param[:x],end="")
+                    check = 0
                     shouldSkip=True
                     shouldDo=False
             else:
