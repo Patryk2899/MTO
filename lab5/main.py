@@ -3,11 +3,14 @@
 import sys
 
 def my_printf(format_string,param):
+    digits = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
+    n
     #print(format_string)
     shouldDo=True
     for idx in range(0,len(format_string)):
         if shouldDo:
-            if format_string[idx] == '#' and format_string[idx+1] == 'k':
+            if format_string[idx] == '#' and (format_string[idx+1] in digits) :
+                n = (int)format_string
                 print(param,end="")
                 shouldDo=False
             else:
