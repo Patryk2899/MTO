@@ -23,9 +23,9 @@ def my_printf(format_string,param):
             if check == 3:
                 shouldSkip=False
         if shouldDo:
-            if format_string[idx] == '#' and (format_string[idx+1] in digits) :
-                if format_string[idx+2] == 'g':
-                    x = int(format_string[idx+1])
+            if format_string[idx] == '#' and format_string[idx+1] and (format_string[idx+2] in digits) :
+                if format_string[idx+3] == 'g':
+                    x = int(format_string[idx+2])
                     n = len(param) - x
 
                     for i in param[:x]:
