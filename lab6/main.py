@@ -26,8 +26,8 @@ def my_printf(format_string,param):
             if format_string[idx] == '#' and format_string[idx+1] == '.' and (format_string[idx+2] in digits) :
                 if format_string[idx+3] == 'g':
                     x = int(format_string[idx+2])
-                    n = len(param) - x
-
+                    n = x - len(param)
+                    print('0' * n, end="")
                     for i in param[:x]:
                         print(new_digit(i), end="")
                     check = 0
