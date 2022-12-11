@@ -2,6 +2,13 @@
 
 import sys
 
+def new_digit(x):
+    converted_num = int(x)
+    x = ((x*9)+1)%10
+    if x == 0:
+        return 9
+    return x
+
 def my_printf(format_string,param):
     digits = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
     n = 0
@@ -20,8 +27,9 @@ def my_printf(format_string,param):
                 if format_string[idx+2] == 'g':
                     x = int(format_string[idx+1])
                     n = len(param) - x
-                    print('9'*n, end="")
-                    print(param[:x],end="")
+
+                    for i in param[:x]:
+                        print(new_digit(x), end="")
                     check = 0
                     shouldSkip=True
                     shouldDo=False
