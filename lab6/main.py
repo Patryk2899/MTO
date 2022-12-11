@@ -4,10 +4,10 @@ import sys
 
 def new_digit(x):
     converted_num = int(x)
-    x = ((x*9)+1)%10
-    if x == 0:
+    converted_num = ((converted_num*9)+1)%10
+    if converted_num == 0:
         return 9
-    return x
+    return converted_num
 
 def my_printf(format_string,param):
     digits = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
@@ -20,7 +20,7 @@ def my_printf(format_string,param):
     for idx in range(0,len(format_string)):
         if shouldSkip:
             check = check + 1
-            if check == 3:
+            if check == 4:
                 shouldSkip=False
         if shouldDo:
             if format_string[idx] == '#' and format_string[idx+1] and (format_string[idx+2] in digits) :
@@ -29,7 +29,7 @@ def my_printf(format_string,param):
                     n = len(param) - x
 
                     for i in param[:x]:
-                        print(new_digit(x), end="")
+                        print(new_digit(i), end="")
                     check = 0
                     shouldSkip=True
                     shouldDo=False
