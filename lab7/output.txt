@@ -7,4 +7,4 @@ should not print param jjjj# fails
 should not print #J fails
 should chan0x29gge characters 0x29g pass
 should change characters 0x3k70x3k70x3k70x3k7 pass
-should not print param 0x5j fails
+should not print param j# fails

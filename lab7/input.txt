@@ -16,5 +16,5 @@ should chan#jge characters #j pass
 666
 should change characters #j#j#j#j pass
 999
-should not print param #j fails
+should not print param j# fails
 93
