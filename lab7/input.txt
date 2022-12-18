@@ -8,13 +8,13 @@ should not print param # j fails
 43
 should not print param j # fails
 59
-gjjkdsljflds #.9g #.2g jdlkfjdslf
+should not print param jjjj# fails
 690
-fjdslkfjdl g tttttt
+should not print #J fails
 112
-fjdlsjfkl # oooolll
+should chan#jge characters #j pass
 666
-rwrewrew #.2g fjdslkjfdl
-98
-fjdlskjfldjflj g#.2gg#g rewrewrew
+should change characters #j#j#j#j pass
+999
+should not print param #j fails
 93

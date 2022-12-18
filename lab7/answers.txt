@@ -3,8 +3,8 @@ should change characters when digit is given 0x1 pass
 should not change characters when hex consists of digits 0x128 pass
 should not print param # j fails
 should not print param j # fails
-gjjkdsljflds 000000521 52 jdlkfjdslf
-fjdslkfjdl g tttttt
-fjdlsjfkl # oooolll
-rwrewrew 23 fjdslkjfdl
-fjdlskjfldjflj g28g#g rewrewrew
+should not print param jjjj# fails
+should not print #J fails
+should chan0x29gge characters 0x29g pass
+should change characters 0x3k70x3k70x3k70x3k7 pass
+should not print param j# fails
