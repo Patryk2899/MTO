@@ -1,8 +1,8 @@
 should change characters 0x111g pass
 should change characters when digit is given 0x1 pass
 should not change characters when hex consists of digits 0x128 pass
-fjdfsfds #5g alal
-djfjkldsjf # g jjjjjj fsfjdljfdlsj flj ldfj
+should not print param # j fails
+should not print param j # fails
 gjjkdsljflds #.9g #.2g jdlkfjdslf
 fjdslkfjdl g tttttt
 fjdlsjfkl # oooolll

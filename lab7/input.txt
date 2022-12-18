@@ -4,9 +4,9 @@ should change characters when digit is given #j pass
 1
 should not change characters when hex consists of digits #j pass
 296
-fjdfsfds #5g alal
+should not print param # j fails
 43
-djfjkldsjf # g jjjjjj fsfjdljfdlsj flj ldfj
+should not print param j # fails
 59
 gjjkdsljflds #.9g #.2g jdlkfjdslf
 690
