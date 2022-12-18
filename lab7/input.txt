@@ -1,9 +1,9 @@
-totafsdfsf #j fdsfsdf
+should change characters #j pass
 4378
-totafsd #.1g fdfjs
+should change characters when digit is given #j pass
 1
-jfldjfldk g# wynik
-45
+should not change characters when hex consists of digits #j pass
+296
 fjdfsfds #5g alal
 43
 djfjkldsjf # g jjjjjj fsfjdljfdlsj flj ldfj

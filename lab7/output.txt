@@ -1,6 +1,6 @@
-totafsdfsf 0x111g fdsfsdf
-totafsd #.1g fdfjs
-jfldjfldk g# wynik
+should change characters 0x111g pass
+should change characters when digit is given 0x1 pass
+should not change characters when hex consists of digits 0x128 pass
 fjdfsfds #5g alal
 djfjkldsjf # g jjjjjj fsfjdljfdlsj flj ldfj
 gjjkdsljflds #.9g #.2g jdlkfjdslf
