@@ -4,7 +4,8 @@ import sys
 
 def change_characters(param, count):
     hex_to_str = str(param)
-
+    hex_to_str = hex_to_str[2:]
+    
     if len(hex_to_str) < count:
         count = count -len(hex_to_str)
         for i in range(1, count):
@@ -32,7 +33,6 @@ def change_characters(param, count):
     return result
 
 def my_printf(format_string,param):
-    #print(format_string)
     numbers = "0123456789"
     shouldDo=True
     count = 4
