@@ -35,17 +35,20 @@ def my_printf(format_string,param):
     #print(format_string)
     numbers = "0123456789"
     shouldDo=True
+    count = 4
     for idx in range(0,len(format_string)):
         if shouldDo:
             if format_string[idx] == '#' and format_string[idx+1] == '.' and format_string[idx+2] in numbers and format_string[idx+3] == "j" :
                 count = int(format_string[idx+2])
                 hex_format = hex(int(param))
                 print(change_characters(hex_format, count),end="")
+                count = 0
                 shouldDo=False
             else:
                 print(format_string[idx],end="")
         else:
-            shouldDo=True
+            if count == 4: 
+                shouldDo=True
     print("")
 
 data=sys.stdin.readlines()

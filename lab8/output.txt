@@ -1,4 +1,4 @@
-should change characters #j pass
+should change characters ox111g
 should change characters when digit is given #j pass
 should not change characters when hex consists of digits #j pass
 should not print param # j fails

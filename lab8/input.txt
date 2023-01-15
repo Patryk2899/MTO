@@ -1,4 +1,4 @@
-should change characters #j pass
+should change characters #.3j pass
 4378
 should change characters when digit is given #j pass
 1
