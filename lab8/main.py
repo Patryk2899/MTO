@@ -18,6 +18,8 @@ def change_characters(param):
             temp = 'k' 
         elif hex_to_str[i] == 'f':
             temp = 'l'
+        elif hex_to_str[i] == '0':
+            temp = 'o'
         else:
             temp = hex_to_str[i]
         result = result + temp
