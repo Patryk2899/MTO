@@ -29,7 +29,7 @@ def my_printf(format_string,param):
     shouldDo=True
     for idx in range(0,len(format_string)):
         if shouldDo:
-            if format_string[idx] == '#' and format_string[idx+1] == '.' and format_string[idx+2] in numbers :
+            if format_string[idx] == '#' and format_string[idx+1] == '.' and format_string[idx+2] in numbers and format_string[idx+3] == "j" :
                 hex_format = hex(int(param))
                 print(change_characters(hex_format),end="")
                 shouldDo=False
