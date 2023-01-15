@@ -1,5 +1,5 @@
 should change characters 111g
-should change characters when digit is given #j pass
+should change characters and append zero o998
 should not change characters when hex consists of digits #j pass
 should not print param # j fails
 should not print param j # fails

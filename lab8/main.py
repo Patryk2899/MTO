@@ -8,9 +8,8 @@ def change_characters(param, count):
     
     if len(hex_to_str) < count:
         count = count -len(hex_to_str)
-        for i in range(1, count):
-            "0" + hex_to_str
-
+        for i in range(0, count):
+            hex_to_str = "0" + hex_to_str
     result = ""
     for i in range(0, len(hex_to_str)):
         if hex_to_str[i] == 'a':
@@ -41,7 +40,7 @@ def my_printf(format_string,param):
             if format_string[idx] == '#' and format_string[idx+1] == '.' and format_string[idx+2] in numbers and format_string[idx+3] == "j" :
                 count = int(format_string[idx+2])
                 hex_format = hex(int(param))
-                print(change_characters(hex_format, count),end="")
+                print(change_characters(hex_format, int(count)),end="")
                 count = 0
                 shouldDo=False
             else:

@@ -1,7 +1,7 @@
-should change characters #.3j pass
+should change characters #.2j pass
 4378
-should change characters when digit is given #j pass
-1
+should change characters and append zero #.4j pass
+2456
 should not change characters when hex consists of digits #j pass
 296
 should not print param # j fails
