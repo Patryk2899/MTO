@@ -2,19 +2,19 @@ should change characters #.2j pass
 4378
 should change characters and append zero #.4j pass
 2456
-should not change characters when hex consists of digits #j pass
+should not change characters when hex consists of digits #.3j pass
 296
-should not print param # j fails
-43
+should not print param #.2j pass
+4378
 should not print param j # fails
 59
 should not print param jjjj# fails
 690
-should not print #J fails
+should not print #J.3 fails
 112
 should chan#jge characters #j pass
 666
-should change characters #j#j#j#j pass
+should change characters #.j#.j#2j#j.2 pass
 999
-should not print param j# fails
+should not print param j.# fails
 93

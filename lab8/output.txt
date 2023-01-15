@@ -1,10 +1,10 @@
 should change characters 111g
 should change characters and append zero o998
-should not change characters when hex consists of digits #j pass
-should not print param # j fails
+should not change characters when hex consists of digits 128
+should not print param 111g
 should not print param j # fails
 should not print param jjjj# fails
-should not print #J fails
+should not print #J.3 fails
 should chan#jge characters #j pass
-should change characters #j#j#j#j pass
-should not print param j# fails
+should change characters #.j#.j#2j#j.2 pass
+should not print param j.# fails
